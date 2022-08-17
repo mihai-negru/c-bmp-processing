@@ -15,11 +15,15 @@
 #define BMP_FILE_SIZE 54
 #define COLOR_BITS 24
 
+/**
+ * @brief Definition of a bmp image object
+ * 
+ */
 typedef struct {
-    bmp_infoheader  infoheader;
-    uint8_t         *img;
-    uint8_t         brush_size;
-    uint8_t         *brush_color;
+    bmp_infoheader  infoheader;                 /* BMP information header */
+    uint8_t         *img;                       /* BMP vector of pixels */
+    uint8_t         brush_size;                 /* BMP drawing brush size */
+    uint8_t         *brush_color;               /* BMP drawing brush color */
 } bmp_obj;
 
 void                    edit_map                (const char * const filename, bmp_obj *bmp);
