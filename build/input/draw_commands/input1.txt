@@ -11,5 +11,5 @@ draw line 571 318 469 243
 draw line 469 243 503 124
 draw line 503 124 399 191
 draw line 399 191 290 121
-save output/Task3/output1.bmp
+save output/draw_commands/output1.bmp
 quit

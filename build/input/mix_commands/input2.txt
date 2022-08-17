@@ -4,5 +4,5 @@ set line_width 11
 draw rectangle 500 200 500 500
 set draw_color 0 255 0
 fill 600 300
-save output/Task5/output2.bmp
+save output/mix_commands/output2.bmp
 quit

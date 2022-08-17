@@ -17,7 +17,7 @@ uint8_t insert_bmp(const char * const filename, bmp_obj *bmp, int32_t pos_y, int
     if (fread(&insert_file_header, sizeof(insert_file_header), 1, fin) != 1) {
         fclose(fin);
         
-        return (1);
+        return 1;
     }
 
     if (insert_file_header.file_mark1 != 'B' || insert_file_header.file_mark2 != 'M') {
@@ -68,11 +68,11 @@ uint8_t insert_bmp(const char * const filename, bmp_obj *bmp, int32_t pos_y, int
         fseek(fin, padding, SEEK_CUR);
     }
 
-    insert_img_index = bmp->infoheader.height * BITS_PER_BYTE * pos_y;
-    int32_t img_index = bmp->infoheader.width * BITS_PER_BYTE * pos_x;
+    insert_img_index = bmp->infoheader.height * pos_y * BITS_PER_BYTE;
+    int32_t img_index = bmp->infoheader.width * pos_x * BITS_PER_BYTE;
 
     if ((pos_y > 0) && (pos_x > 0)) {
-        img_index = pos_y + pos_x * bmp->infoheader.width * BITS_PER_BYTE;
+        img_index = (pos_y + pos_x * bmp->infoheader.width) * BITS_PER_BYTE;
         insert_img_index = 0;
     }
 
@@ -102,7 +102,7 @@ uint8_t insert_bmp(const char * const filename, bmp_obj *bmp, int32_t pos_y, int
             img_index += (pos_y * BITS_PER_BYTE);
             insert_img_index += (insert_info_header.width - bmp->infoheader.width + pos_y) * BITS_PER_BYTE;
         } else {
-            img_index += (bmp->infoheader.width - insert_info_header.width) * BITS_PER_BYTE;
+            img_index += BITS_PER_BYTE * (bmp->infoheader.width - insert_info_header.width);
         }
     }
 

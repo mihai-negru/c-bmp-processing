@@ -48,10 +48,10 @@ void draw_dot(bmp_obj *bmp, int32_t pos_y1, int32_t pos_x1) {
             start_draw_bit = (pos_x1 - half_brush_size) * bmp->infoheader.width * BITS_PER_BYTE;
             stop_j = half_brush_size + pos_y1;
         } else if ((pos_y1 + half_brush_size) < bmp->infoheader.width) {
-            start_draw_bit = ((pos_x1 - half_brush_size) * bmp->infoheader.width + pos_y1 - half_brush_size) * BITS_PER_BYTE;
+            start_draw_bit = ((pos_x1 - half_brush_size) * bmp->infoheader.width + (pos_y1 - half_brush_size)) * BITS_PER_BYTE;
             stop_j = bmp->brush_size;
         } else {
-            start_draw_bit = ((pos_x1 - half_brush_size) * bmp->infoheader.width + pos_y1 - half_brush_size) * BITS_PER_BYTE;
+            start_draw_bit = ((pos_x1 - half_brush_size) * bmp->infoheader.width + (pos_y1 - half_brush_size)) * BITS_PER_BYTE;
             stop_j = bmp->infoheader.width - pos_y1 + half_brush_size;
         }
     } else {
@@ -61,10 +61,10 @@ void draw_dot(bmp_obj *bmp, int32_t pos_y1, int32_t pos_x1) {
             start_draw_bit = (pos_x1 - half_brush_size) * bmp->infoheader.width * BITS_PER_BYTE;
             stop_j = half_brush_size + pos_y1;
         } else if ((pos_y1 + half_brush_size) < bmp->infoheader.width) {
-            start_draw_bit = ((pos_x1 - half_brush_size) * bmp->infoheader.width + pos_y1 - half_brush_size) * BITS_PER_BYTE;
+            start_draw_bit = ((pos_x1 - half_brush_size) * bmp->infoheader.width + (pos_y1 - half_brush_size)) * BITS_PER_BYTE;
             stop_j = bmp->brush_size;
         } else {
-            start_draw_bit = ((pos_x1 - half_brush_size) * bmp->infoheader.width + pos_y1 - half_brush_size) * BITS_PER_BYTE;
+            start_draw_bit = ((pos_x1 - half_brush_size) * bmp->infoheader.width + (pos_y1 - half_brush_size)) * BITS_PER_BYTE;
             stop_j = bmp->infoheader.width - pos_y1 + half_brush_size;
         }
     }
@@ -182,7 +182,7 @@ uint8_t draw_rectangle(bmp_obj *bmp, int32_t pos_y1, int32_t pos_x1, int32_t rec
 }
 
 uint8_t draw_triangle(bmp_obj *bmp, int32_t pos_y1, int32_t pos_x1, int32_t pos_y2, int32_t pos_x2, int32_t pos_y3, int32_t pos_x3) {
-    if (draw_line(bmp, pos_y1, pos_x1, pos_y2, pos_x2)) {
+    if (draw_line(bmp, pos_y1, pos_x1, pos_y3, pos_x3)) {
         return 1;
     }
 
@@ -190,7 +190,7 @@ uint8_t draw_triangle(bmp_obj *bmp, int32_t pos_y1, int32_t pos_x1, int32_t pos_
         return 1;
     }
 
-    if (draw_line(bmp, pos_y3, pos_x3, pos_y1, pos_x1)) {
+    if (draw_line(bmp, pos_y1, pos_x1, pos_y2, pos_x2)) {
         return 1;
     }
 

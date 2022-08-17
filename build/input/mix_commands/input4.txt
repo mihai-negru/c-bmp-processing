@@ -6,5 +6,5 @@ set line_width 55
 draw triangle 60 60 400 60 500 300
 set draw_color 255 0 255
 fill 60 60
-save output/Task5/output4.bmp
+save output/mix_commands/output4.bmp
 quit

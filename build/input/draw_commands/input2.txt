@@ -7,5 +7,5 @@ draw rectangle 30 30 400 200
 set line_width 5
 set draw_color 0 0 255
 draw rectangle 10 10 400 400
-save output/Task3/output2.bmp
+save output/draw_commands/output2.bmp
 quit
