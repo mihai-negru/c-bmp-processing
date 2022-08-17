@@ -1,0 +1,10 @@
+edit images/blank.bmp
+set draw_color 0 0 255
+insert images/tree.bmp 20 20
+insert images/christmas.bmp 50 50
+set line_width 55
+draw triangle 60 60 400 60 500 300
+set draw_color 255 0 255
+fill 60 60
+save output/Task5/output4.bmp
+quit

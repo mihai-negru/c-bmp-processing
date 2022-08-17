@@ -1,0 +1,7 @@
+edit images/star.bmp
+set draw_color 255 165 0
+fill 290 121
+set draw_color 255 255 0
+fill 400 200
+save output/Task4/output0.bmp
+quit

@@ -1,0 +1,11 @@
+edit images/blank.bmp
+set draw_color 255 0 0
+set line_width 11
+draw rectangle 10 10 400 400
+set draw_color 0 255 0
+draw rectangle 30 30 400 200
+set line_width 5
+set draw_color 0 0 255
+draw rectangle 10 10 400 400
+save output/Task3/output2.bmp
+quit

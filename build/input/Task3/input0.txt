@@ -1,0 +1,6 @@
+edit images/kalm.bmp
+set draw_color 255 255 255
+set line_width 9
+draw line 15 25 328 85
+save output/Task3/output0.bmp
+quit

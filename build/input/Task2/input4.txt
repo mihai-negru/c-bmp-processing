@@ -1,0 +1,4 @@
+edit images/christmas.bmp
+insert images/sunset.bmp 1000 1000
+save output/Task2/output4.bmp
+quit

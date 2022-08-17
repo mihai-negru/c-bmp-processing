@@ -1,0 +1,15 @@
+edit images/blank.bmp
+set draw_color 255 0 0
+set line_width 41
+draw triangle 10 10 400 20 300 300
+set draw_color 255 255 0
+set line_width 31
+draw triangle 10 10 400 20 300 300
+set draw_color 255 0 255
+set line_width 21
+draw triangle 10 10 400 20 300 300
+set draw_color 0 255 0
+set line_width 11
+draw triangle 10 10 400 20 300 300
+save output/Task3/output3.bmp
+quit

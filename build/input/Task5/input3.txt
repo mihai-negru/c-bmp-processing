@@ -1,0 +1,6 @@
+edit images/blank.bmp
+set draw_color 0 0 255
+insert images/tree.bmp 20 20
+fill 10 10
+save output/Task5/output3.bmp
+quit

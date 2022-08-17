@@ -1,0 +1,12 @@
+edit images/surprise.bmp
+set draw_color 255 0 0
+fill 24 145
+fill 97 145
+fill 207 145
+fill 280 145
+fill 391 145
+fill 465 145
+fill 555 145
+fill 555 112
+save output/Task4/output1.bmp
+quit

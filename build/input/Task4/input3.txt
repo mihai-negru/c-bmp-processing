@@ -1,0 +1,5 @@
+edit images/small_blank.bmp
+set draw_color 255 105 180
+fill 10 10
+save output/Task4/output3.bmp
+quit

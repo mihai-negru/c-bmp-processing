@@ -1,0 +1,11 @@
+edit images/bubbles.bmp
+set draw_color 0 162 232
+fill 105 100
+set draw_color 153 217 234
+fill 185 100
+set draw_color 0 128 192
+fill 225 100
+set draw_color 0 0 255
+fill 185 175
+save output/Task4/output2.bmp
+quit

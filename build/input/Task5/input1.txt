@@ -1,0 +1,21 @@
+edit images/blank.bmp
+set draw_color 0 0 0
+set line_width 11
+draw line 0 50 768 50
+set draw_color 255 165 0
+draw rectangle 25 50 200 200
+fill 85 60
+set draw_color 165 42 42
+draw rectangle 80 50 50 100
+fill 90 60
+set draw_color 135 206 250
+draw rectangle 40 180 50 50
+fill 50 190
+set draw_color 135 206 250
+draw rectangle 160 180 50 50
+fill 170 190
+set draw_color 255 0 0
+draw triangle 15 250 235 250 125 400
+fill 55 260
+save output/Task5/output1.bmp
+quit

@@ -1,0 +1,10 @@
+edit images/tree.bmp
+set line_width 11
+set draw_color 139 69 19
+draw rectangle 530 70 40 60
+set draw_color 0 100 0
+draw triangle 500 270 600 270 550 320
+draw triangle 480 200 620 200 550 280
+draw triangle 460 130 640 130 550 210
+save output/Task5/output0.bmp
+quit

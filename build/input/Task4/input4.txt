@@ -1,0 +1,5 @@
+edit images/lightning.bmp
+set draw_color 255 242 0
+fill 100 125
+save output/Task4/output4.bmp
+quit

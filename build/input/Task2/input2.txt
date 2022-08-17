@@ -1,0 +1,8 @@
+edit images/kalm.bmp
+insert images/kalm.bmp 0 90
+insert images/kalm.bmp 0 180
+insert images/kalm.bmp 0 270
+insert images/kalm.bmp 0 360
+insert images/kalm.bmp 0 450
+save output/Task2/output2.bmp
+quit

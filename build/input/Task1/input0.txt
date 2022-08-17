@@ -1,0 +1,3 @@
+edit images/christmas.bmp
+save ./output/Task1/output0.bmp
+quit

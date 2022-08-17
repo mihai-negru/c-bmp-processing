@@ -1,0 +1,15 @@
+edit images/christmas.bmp
+set draw_color 255 255 0
+set line_width 5
+draw line 290 121 328 242
+draw line 328 242 225 317
+draw line 225 317 356 319
+draw line 356 319 399 437
+draw line 399 437 439 319
+draw line 439 319 571 318
+draw line 571 318 469 243
+draw line 469 243 503 124
+draw line 503 124 399 191
+draw line 399 191 290 121
+save output/Task3/output1.bmp
+quit
