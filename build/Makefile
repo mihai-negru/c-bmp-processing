@@ -21,9 +21,6 @@ bmp: bmp_obj_files
 bmp_obj_files: $(FILES)
 	@gcc $(CFLAGS) $(FILES)
 
-checkmem: bmp
-	valgrind --tool=memcheck --leak-check=full --error-exitcode=1 ./bmp
-
 clean:
 	@find . -type f -name "*.o" -exec rm -rf {} \;
 	@rm -rf output bmp
